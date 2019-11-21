@@ -30,7 +30,7 @@ app.post('/initpow',(req,res)=>{
     });
 
     app.post('/initpow',(req,res)=>{
-        //nuance = req.body.nuance;
+        array=[];
         request.post({url:'http://localhost:1000/pow',form :{ "data": {
             "nuance" : "",
             "body" : req.body.body
